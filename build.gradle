@@ -1,7 +1,22 @@
-plugins {
-	id 'org.springframework.boot' version '2.5.4'
-	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
-	id 'java'
+buildscript {
+  repositories {
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+  }
+
+  dependencies {
+    classpath "org.elasticsearch.gradle:build-tools:7.14.0"
+  }
+}
+
+apply plugin: 'java'
+apply plugin: 'elasticsearch.esplugin'
+
+esplugin {
+	name 'hanhinsam'
+	description 'Elasticsearch Korean analysis token filters plugin'
+	classname 'com.yaincoding.hanhinsam.plugin.HanHinSamPlugin'
 }
 
 group = 'com.yaincoding'
@@ -14,14 +29,13 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.7.0'
 
 	implementation group: 'org.elasticsearch', name: 'elasticsearch', version: '7.14.0'
 	implementation group: 'org.apache.lucene', name: 'lucene-analyzers-nori', version: '8.9.0'
-
 }
 
 test {
 	useJUnitPlatform()
 }
+
