@@ -1,4 +1,4 @@
-package com.yaincoding.hanhinsam.plugin;
+package com.yaincoding.hanhinsam;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -16,10 +16,10 @@ public class HanHinSamPlugin extends Plugin implements AnalysisPlugin {
 	@Override
 	public Map<String, AnalysisProvider<TokenFilterFactory>> getTokenFilters() {
 		Map<String, AnalysisProvider<TokenFilterFactory>> extra = new HashMap<>();
-		extra.put("chosung", ChosungFilterFactory::new);
-		extra.put("jamo", JamoDecomposeFilterFactory::new);
-		extra.put("engtohan", EngToHanFilterFactory::new);
-		extra.put("hantoeng", HanToEngFilterFactory::new);
+		extra.put("hanhinsam_chosung", ChosungFilterFactory::new);
+		extra.put("hanhinsam_jamo", JamoDecomposeFilterFactory::new);
+		extra.put("hanhinsam_engtohan", EngToHanFilterFactory::new);
+		extra.put("hanhinsam_hantoeng", HanToEngFilterFactory::new);
 
 		return extra;
 	}
