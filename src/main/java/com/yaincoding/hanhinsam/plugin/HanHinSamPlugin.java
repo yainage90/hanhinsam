@@ -1,4 +1,4 @@
-package com.yaincoding.hanhinsam;
+package com.yaincoding.hanhinsam.plugin;
 
 import java.util.HashMap;
 import java.util.Map;
