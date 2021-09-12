@@ -33,7 +33,6 @@ repositories {
 
 dependencies {
 	implementation group: 'org.elasticsearch', name: 'elasticsearch', version: '7.14.0'
-	testImplementation group: 'org.apache.lucene', name: 'lucene-analyzers-common', version: '8.9.0'
 	testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.7.0'
 	testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.7.0'
 }
