@@ -4,6 +4,14 @@
 
 이 프로젝트는 elasticsearch 7.14.0으로 작성되었습니다. 버전 차이가 크지 않다면 큰 상관이 없을 수 있지만 혹시 버전 차이로 빌드나 동작에 문제가 발생한다면 `build.gradle`에서 elasticsearch와 org.elasticsearch.gradle:build-tools 버전을 수정해야 합니다. 버전 수정 후 라이브러리 버전 차이에 따른 문제가 발생하면 해당 부분의 코드를 수정 후 빌드하여 사용해야 합니다.
 
+<br>
+
+해당 `Readme.md` 후반부의 예제는 설명을 위해 매우 간단한 case들에 적용하였으며 실제 검색에 적용하기 위해서는 더 복잡한 필드 매핑 설계 및 커스텀 분석기 디자인이 필요합니다.
+아래 링크는 이 플러그인을 적용하여 만든 도서 검색 API 프로젝트 github repository 입니다.
+[https://github.com/yaincoding/yacobooks-api](https://github.com/yaincoding/yacobooks-api)
+
+<br>
+
 지원하는 토큰 필터 종류는 아래와 같습니다.
 
 **1) 자모 분리 필터(hanhinsam_jamo)**
