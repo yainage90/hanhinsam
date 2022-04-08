@@ -6,7 +6,7 @@ buildscript {
   }
 
   dependencies {
-    classpath "org.elasticsearch.gradle:build-tools:7.14.0"
+    classpath "org.elasticsearch.gradle:build-tools:8.1.2"
   }
 }
 
@@ -32,7 +32,7 @@ repositories {
 }
 
 dependencies {
-	implementation group: 'org.elasticsearch', name: 'elasticsearch', version: '7.14.0'
+	implementation group: 'org.elasticsearch', name: 'elasticsearch', version: '8.1.2'
 	testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.7.0'
 	testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.7.0'
 }
