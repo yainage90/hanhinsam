@@ -2,7 +2,9 @@
 
 엘라스틱서치(ElasticSearch)에서 한글 검색 확장 기능을 위해 만든 토큰 필터 플러그인입니다.
 
-이 프로젝트는 elasticsearch 7.14.0으로 작성되었습니다. 버전 차이가 크지 않다면 큰 상관이 없을 수 있지만 혹시 버전 차이로 빌드나 동작에 문제가 발생한다면 `build.gradle`에서 elasticsearch와 org.elasticsearch.gradle:build-tools 버전을 수정해야 합니다. 버전 수정 후 라이브러리 버전 차이에 따른 문제가 발생하면 해당 부분의 코드를 수정 후 빌드하여 사용해야 합니다.
+이 프로젝트는 elasticsearch 8.1.2으로 작성되었습니다. 버전 차이가 크지 않다면 큰 상관이 없을 수 있지만 혹시 버전 차이로 빌드나 동작에 문제가 발생한다면 `build.gradle`에서 elasticsearch와 org.elasticsearch.gradle:build-tools 버전을 수정해야 합니다. 버전 수정 후 라이브러리 버전 차이에 따른 문제가 발생하면 해당 부분의 코드를 수정 후 빌드하여 사용해야 합니다.
+
+※ elasticsearch 8버전 플러그인은 java 11, 13 모두 실패하여 openjdk17을 사용해서 빌드했습니다. 혹시 빌드가 실패한다면 java와 gradle 버전을 업데이트 해주세요
 
 <br>
 
