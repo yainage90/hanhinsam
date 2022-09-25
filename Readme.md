@@ -4,7 +4,10 @@
 
 이 프로젝트는 elasticsearch 8.1.2으로 작성되었습니다. 버전 차이가 크지 않다면 큰 상관이 없을 수 있지만 혹시 버전 차이로 빌드나 동작에 문제가 발생한다면 `build.gradle`에서 elasticsearch와 org.elasticsearch.gradle:build-tools 버전을 수정해야 합니다. 버전 수정 후 라이브러리 버전 차이에 따른 문제가 발생하면 해당 부분의 코드를 수정 후 빌드하여 사용해야 합니다.
 
-※ elasticsearch 8버전 플러그인은 java 11, 13 모두 실패하여 openjdk17을 사용해서 빌드했습니다. 혹시 빌드가 실패한다면 java와 gradle 버전을 업데이트 해주세요
+*빌드 참고 사항*
+java17을 사용해서 빌드 되었습니다. java17의 경우 gradle 7.3버전부터 완전히 지원합니다. `build.gradle`에 명시된 elasticsearch와 다른 버전을 사용할 경우 java, gradle 버전이 맞지 않으면 빌드에 실패할 수 있습니다.
+Unsupported class file major version 에러가 날 경우, 에러 메시지에 따라서 java 버전을 수정하고 `settings.gradle`에서 gradle 버전을 변경해주면 됩니다.
+
 
 <br>
 
